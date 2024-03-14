@@ -9,7 +9,7 @@ import math
 def menu():
 	selector = int(input("Introduzca un numero para calcular el volumen de: \n 1) Un cono. \n 2) Un ortoedro \n 3)Salir\n"))
 	while(selector < 1 or selector > 3):
-		selector = input(int("Error: opcion invalida\n Introduzca un numero para calcular el volumen de: \n 1) Un cono. \n 2) Un ortoedro \n 3)Salir\n"))
+		selector = int(input("Error: opcion invalida\n Introduzca un numero para calcular el volumen de: \n 1) Un cono. \n 2) Un ortoedro \n 3)Salir\n"))
 	return selector
 def volumen_cono(r, a):
 	pi = math.pi
