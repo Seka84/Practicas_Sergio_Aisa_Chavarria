@@ -5,13 +5,26 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-void arrayInit (int array[]);
+void arrayInit (int array[5][5]);
 int main (){
 	int array[5][5];
 	arrayInit (array);
+	for(int i = 0; i < 5; i++ ){
+		printf("(");
+		for (int j = 0; j < 5 ; j++){
+			printf("%d ", array[i][j]);
+		}
+		printf(")\n");
+	}
+	printf("\n");
 	return 0;
 }
-void arrayInit (int array[]){
+void arrayInit (int array[5][5]){
 	srand(time(NULL));
-	for(int i )
+	for(int i = 0; i < 5; i++ ){
+		for (int j = 0; j < 5 ; j++){
+			array[i][j] = rand() % 12 + 3;
+		}
+	
+	}
 }
